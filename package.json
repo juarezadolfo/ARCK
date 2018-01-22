@@ -1,0 +1,31 @@
+{
+  "name": "arck",
+  "version": "1.0.0",
+  "description": "TEAM PROJECT 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juarezadolfo/ARCK.git"
+  },
+  "keywords": [
+    "arck"
+  ],
+  "author": "arck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juarezadolfo/ARCK/issues"
+  },
+  "homepage": "https://github.com/juarezadolfo/ARCK#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.32.1"
+  }
+}
