@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "291woodlawn",
+=======
+    "password": "",
+>>>>>>> master
     "database": "team_finder",
     "host": "127.0.0.1",
     "dialect": "mysql"

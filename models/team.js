@@ -10,16 +10,28 @@ module.exports = function (sequelize, DataTypes) {
         userScore: {
             type: DataTypes.INTEGER
         },
+<<<<<<< HEAD
         created_at: {
+=======
+        createdAt: {
+>>>>>>> master
             type: 'TIMESTAMP',
             defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
+<<<<<<< HEAD
         updated_at: {
             type: 'TIMESTAMP',
             defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
+=======
+        updatedAt: {
+            type: 'TIMESTAMP',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+            allowNull: false
+        }
+>>>>>>> master
     });
 
     return Team;
