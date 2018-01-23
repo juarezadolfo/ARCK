@@ -4,4 +4,6 @@ CREATE DATABASE team_finder;
 
 USE team_finder;
 
+SELECT * FROM teams;
+
 
