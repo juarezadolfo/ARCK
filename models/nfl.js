@@ -1,5 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
-    var Team = sequelize.define("Team", {
+
+    var NFLTeam = sequelize.define("NFLTeam", {
         // Giving the Team model a name of type STRING
         teamName: {
             type: DataTypes.STRING
@@ -7,35 +8,24 @@ module.exports = function (sequelize, DataTypes) {
         photo: {
             type: DataTypes.TEXT
         },
-        questionOne: {
-            type: DataTypes.INTEGER
+
+        record: {
+            type: DataTypes.STRING
         },
-        questionTwo: {
-            type: DataTypes.INTEGER
+        headCoach: {
+            type: DataTypes.STRING
         },
-        questionThree: {
-            type: DataTypes.INTEGER
+        teamOwner: {
+            type: DataTypes.STRING
         },
-        questionFour: {
-            type: DataTypes.INTEGER
+        stadium: {
+            type: DataTypes.STRING
         },
-        questionFive: {
-            type: DataTypes.INTEGER
+        teamLink: {
+            type: DataTypes.TEXT
         },
-        questionSix: {
-            type: DataTypes.INTEGER
-        },
-        questionSeven: {
-            type: DataTypes.INTEGER
-        },
-        questionEight: {
-            type: DataTypes.INTEGER
-        },
-        questionNine: {
-            type: DataTypes.INTEGER
-        },
-        questionTende: {
-            type: DataTypes.INTEGER
+        ticketLink: {
+            type: DataTypes.TEXT
         },
         createdAt: {
             type: 'TIMESTAMP',
