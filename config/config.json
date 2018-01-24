@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Nonfatbearz1",
+    "password": "",
     "database": "team_finder",
     "host": "127.0.0.1",
     "dialect": "mysql"
