@@ -14,7 +14,7 @@ VALUES
 
 
 
-    
+
 INSERT INTO teams
     (teamName, photo, record, headCoach, teamOwner, stadium, teamLink, ticketLink)
 VALUES
