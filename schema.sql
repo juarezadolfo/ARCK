@@ -6,4 +6,6 @@ USE team_finder;
 
 SELECT * FROM teams;
 
+SELECT * FROM NFLTeam;
+
 
