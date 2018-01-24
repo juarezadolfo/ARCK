@@ -1,4 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
+
     var NFLTeam = sequelize.define("NFLTeam", {
         // Giving the Team model a name of type STRING
         teamName: {
@@ -7,6 +8,7 @@ module.exports = function (sequelize, DataTypes) {
         photo: {
             type: DataTypes.TEXT
         },
+
         record: {
             type: DataTypes.STRING
         },
