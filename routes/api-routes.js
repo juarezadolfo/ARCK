@@ -1,9 +1,9 @@
 var db = require("../models");
-var nflScore = require("../data/surveyScore")
+var nflScore = require("../data/teams.js")
 
 module.exports = function (app) {
 
-    app.get("/", function (req, res) {
+    app.get("/all", function (req, res) {
         // var query = {};
         // var nflScore = {};
         // for (var i=0; i<nflScore.length; i++) {
@@ -31,6 +31,10 @@ module.exports = function (app) {
        });
      });
    
+
+     app.get("/api/teams", function(req, res){
+        res.json(teamsArray);
+    });
 
 
     // POST route for saving a new post
