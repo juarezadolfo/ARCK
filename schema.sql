@@ -8,6 +8,6 @@ SELECT * FROM team_finder.Teams;
 
 
 
-SELECT * FROM NFLTeam;
+SELECT * FROM NFLTeams;
 
 

@@ -1,20 +1,30 @@
+// Dependencies
+// =============================================================
 
-var db = require("../models")
+// Requiring our models
+var db = require("../models");
 
+// Routes
+// =============================================================
 module.exports = function(app) {
-    app.get("/api/all", function(req, res)
-{
-    db.Team.findAll({}).then(function(dbTeam)
-    {
-        res.json(dbTeam);
+
+    // GET route for getting all of the posts
+    app.get("/", function(req, res) {
+      var query = {};
+      if (req.query.team_id) {
+        query.TeamId = req.query.team_id;
+      }
+      db.Post.findAll({}).then(function(dbPost) {
+        res.json(dbPost);
+      });
     });
-});
-
-    app.
-
-}
-
-
-
-
-
+  
+  
+    // POST route for saving a new post
+    app.post("/api/posts", function(req, res) {
+      db.Team.create(req.body).then(function(dbTeam) {
+        res.json(dbTeam);
+      });
+    });
+  
+  };
