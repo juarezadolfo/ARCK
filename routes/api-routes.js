@@ -24,11 +24,11 @@ module.exports = function (app) {
     });
 
 
-    app.get("/nfl/:teamName", function(req, res) {
+    app.get("/nfl/:id", function(req, res) {
         // Find one Author with the id in req.params.id and return them to the user with res.json
        db.NFLTeam.findOne({
          where: {
-            teamName: req.params.teamName
+            id: req.params.id
          }
        }).then(function(dbNFLTeam) {
         // if the survey score is the id number call the findOne with that id number?
