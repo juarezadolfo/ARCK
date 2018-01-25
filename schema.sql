@@ -4,10 +4,3 @@ CREATE DATABASE team_finder;
 
 USE team_finder;
 
-SELECT * FROM team_finder.Teams;
-
-
-
-SELECT * FROM NFLTeams;
-
-
