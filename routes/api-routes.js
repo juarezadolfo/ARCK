@@ -1,17 +1,19 @@
-
-
 var db = require("../models");
 
 module.exports = function (app) {
 
     app.get("/", function (req, res) {
         var query = {};
-        if (req.query.team_id) {
-            query.TeamId = req.query.team_id;
+        var nflScore = {};
+        for (var i=0; i<nflScore.length; i++) {
+            if (req.query.team_id===nflScore[i]) {
+                query.TeamId = req.query.team_id;
+            }
+            db.Team.findAll({}).then(function (dbTeam) {
+                res.json(dbTeam);
+            });
         }
-        db.Team.findAll({}).then(function (dbTeam) {
-            res.json(dbTeam);
-        });
+      
     });
 
 
